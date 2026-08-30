@@ -1,0 +1,106 @@
+# ===========================================
+# 1. VIRTUAL ENVIRONMENTS (BIGGEST CULPRIT)
+# ===========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# ===========================================
+# 2. PYTHON CACHE & COMPILED FILES
+# ===========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.dll
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+.Python
+
+# ===========================================
+# 3. DATASETS & LARGE FILES (HACKATHON KILLERS)
+# ===========================================
+# Block all raw data files to avoid >100MB limit
+data/raw/*.csv
+data/raw/*.pcap
+data/raw/*.pcapng
+data/raw/*.zip
+data/raw/*.tar.gz
+data/raw/*.7z
+data/raw/*.parquet
+
+# Block processed data (if any)
+data/processed/*.csv
+data/processed/*.pkl
+
+# ===========================================
+# 4. MACHINE LEARNING MODELS (CAN BE REGENERATED)
+# ===========================================
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.onnx
+
+# ===========================================
+# 5. ENVIRONMENT VARIABLES & SECRETS
+# ===========================================
+.env
+*.env
+.env.local
+.env.*.local
+secrets.toml
+
+# ===========================================
+# 6. IDE & CODE EDITOR FILES
+# ===========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.ropeproject/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# ===========================================
+# 7. STREAMLIT SPECIFIC (Optional)
+# ===========================================
+.streamlit/
+.streamlit/*.toml
+
+# ===========================================
+# 8. OPERATING SYSTEM FILES
+# ===========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ===========================================
+# 9. LOGS & TEMPORARY FILES
+# ===========================================
+*.log
+alerts.jsonl
+*.tmp
+temp/
+tmp/
+
+# ===========================================
+# 10. JUPYTER NOTEBOOKS (If used)
+# ===========================================
+.ipynb_checkpoints/
+*.ipynb
