@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fastapi==0.115.6
 uvicorn==0.34.0
 numpy==1.26.4
@@ -5,3 +6,29 @@ pandas==2.2.3
 scikit-learn==1.6.1
 joblib==1.4.2
 python-multipart==0.0.20
+=======
+# Core
+python-dotenv==1.0.0
+
+# Network packet processing
+scapy==2.5.0
+
+# Data processing
+pandas==1.5.3
+numpy==1.24.3
+
+# Machine Learning
+scikit-learn==1.3.0
+joblib==1.3.2
+
+# Dashboard
+streamlit==1.25.0
+plotly==5.15.0
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Utilities
+tqdm==4.65.0
+>>>>>>> 13c76b1c6f7b77a45068bcb8629e583757891015
